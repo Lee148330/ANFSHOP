@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>商店 - Armed Nation Firearms</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>商店</h1>
+    <a href="index.html" class="btn">返回首页</a>
+  </header>
+
+  <section class="store">
+    <div class="item" onclick="showDetails('M1911')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Colt_Model_1911_pistol_-_top_right.jpg" alt="M1911">
+      <h3>M1911</h3>
+      <button class="btn">查看详情</button>
+    </div>
+
+    <div class="item" onclick="showDetails('M9')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f4/Beretta_M9_02.jpg" alt="M9">
+      <h3>M9</h3>
+      <button class="btn">查看详情</button>
+    </div>
+
+    <div class="item" onclick="showDetails('Remington700')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/10/Remington_700_BDL_Varmint_Synthetic.jpg" alt="Remington 700">
+      <h3>Remington 700</h3>
+      <button class="btn">查看详情</button>
+    </div>
+
+    <div class="item" onclick="showDetails('Remington870')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Remington_Model_870_Express_12_Gauge.jpg" alt="Remington 870">
+      <h3>Remington 870</h3>
+      <button class="btn">查看详情</button>
+    </div>
+
+    <div class="item" onclick="showDetails('AR15')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/AR-15_Rifle_-_M4A1_Style.jpg" alt="AR-15">
+      <h3>AR-15</h3>
+      <button class="btn">查看详情</button>
+    </div>
+  </section>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+</body>
+</html>
